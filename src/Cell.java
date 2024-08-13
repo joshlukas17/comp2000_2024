@@ -3,18 +3,15 @@ import java.awt.Graphics;
 import java.awt.Point;
 
 public class Cell {
-  // fields
   int x;
   int y;
   static int size = 35;
 
-  // constructors
   public Cell(int inX, int inY) {
     x = inX;
     y = inY;
   }
 
-  // methods
   public void paint(Graphics g, Point mousePos) {
     if(contains(mousePos)) {
       g.setColor(Color.GRAY);
